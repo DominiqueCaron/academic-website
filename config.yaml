@@ -1,0 +1,144 @@
+baseURL: "https://profile.gurusabarish.tech"
+languageCode: "en-us"
+title: ""
+theme: "hugo-profile"
+relativeURLs: true
+
+googleanalytics: UA-xxxxxx-x
+disqusShortname:
+Paginate: 3
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+enableEmoji: true
+params:
+  version: 3
+
+  favicon: ""
+  description: "A high performance hugo theme for personal portfolio and blog."
+
+  # Navbar Menus
+  customMenus:
+    - name: "Blog"
+      Url: "/blog"
+
+  # home
+  disable_home: false
+  profile_image: "/images/profile.png"
+  name: "Dominique Caron"
+  profession: "PhD Student"
+  affiliation: "Department of Biology at McGill University"
+  github: "https://github.com/DominiqueCaron"
+  twitter: "https://twitter.com/CardinalCaron"
+  googlescholar: "https://scholar.google.ca/citations?user=c1ee-V4AAAAJ&hl=fr&oi=ao"
+  orcid: "https://orcid.org/0000-0002-2151-6693"
+
+  # About
+  disable_about: false
+  descripe_l1_person: "I'm Dom, a PhD student in the [Quantitative Biodiversity Lab](https://qbiodiversity.org/) at McGill University. I make use of predictive models and readily available information to study food webs of terrestrial vertebrates in Canada and Europe."
+  descripe_l2_person: "Interested in what I'm doing? Find more about my [research](#phd), some of the [other projects](#projects) I'm involved in, and my [publications](#publications)."
+
+  # Experience
+  disable_experience: false
+  experience:
+    - company: "Environment and Climate Change Canada"
+      id: "eccc-developer"
+      role: "Software developer"
+      startdate: Jan 2019
+      enddate: present
+      featuredpoints:
+        - point: Maintained and improved a decision-making software used during environmental emergencies.
+        - point: Developed other tools to help decision-making.
+    - company: "Éco-corridors Laurentiens"
+      id: "ecl-conservation"
+      role: "Conservation planning assistant"
+      startdate: Aug 2019
+      enddate: Dec 2019
+      featuredpoints:
+        - point: Performed ecological connectivity anayses and identified ecological corridors.
+        - point: Provided spatial prioritisation analyses for the Laurentides.
+    - company: "Ouranos"
+      id: "ouranos-intern"
+      role: "Research Assistant"
+      startdate: May 2018
+      enddate: Dec 2018
+      featuredpoints:
+        - point: Consequences of climate change on outdoor workers’ health in Canada.
+        - point: Developped [ClimateTools.jl](https://github.com/JuliaClimate/ClimateTools.jl) package.
+
+  # Education
+  disable_education: false
+  education:
+    - degree: "BSc"
+      branch: "Biological Sciences"
+      university: "Université de Montréal"
+      startedyear: "2014"
+      graduation: "2017"
+    - degree: "MSc"
+      branch: "Quantitative and Computational Biology"
+      university: "Université de Montréal"
+      startedyear: "2017"
+      graduation: "2018"
+    - degree: "PhD"
+      branch: "Biology"
+      university: "McGill university"
+      startedyear: "2020"
+      graduation: "present"
+
+  # Projects
+  disable_projects: false
+  projects:
+    - name: "Association between phenotypic and selection differences"
+      img: /images/EcoEvoProject.png
+      githublink: ""
+      featuredlink: ""
+      description: "Because trait differences among populations are maintained and driven by differences in selection, we should expect an association between the magnitude of phenotypic differences we observe and of differences in selection estimates we measure, right? This is a seemingly reasonable assumption, but in natural ecosystems, many processes probably make this association impossible to detect. In this project, I dabbled into eco-evolutionary dynamics to test the association between population divergence and selection difference. Along with my collaborators, we developped a new graphical vector-based approach and performed a meta-analysis to tackle this task."
+    - name: "BiRdEmergency"
+      img: /images/BirdEmergency.png
+      githublink: ""
+      featuredlink: ""
+      description: "Each year, around 100 million tonnes of oil and other petrolium products are moved in and out the ports of Eastern Canada. Each time some of this oil end up in our water, we need to quickly decide which type of intervention are needed to minimize the environmental consequences. This is where BiRdEmergency comes into play. BiRdEmergency is a Shiny application at Environment and Climate Change Canada to quickly explore the biodiversity data available for the affected area, and help to make data-driven decisions. During my off year from academia, I updated and improved the app. Since then, I am in charge of maintaining BiRdEmergengy, which is used on a weekly basis at Canadian Wildlife Service."
+    - name: "Ecological connectivity in the Laurentians"
+      img: /images/ECLproject.png
+      githublink: ""
+      featuredlink: ""
+      description: "In a fragmented landscape like Southern Québec, animals often need to move and disperse between habitat patches to maintain their populations. This ability of species to move through the landscape is described by the ecological connectivity. In 2019, I worked with Éco-corridors Laurentiens to analyze the ecological connectivity of the Laurentians and identify the main ecological corridors. Our analyses were included in the \"Plan for the Ecological Connectivity of the Laurentians \" and will help direct conservation efforts to maintain ecological connectivity in the region."
+    - name: "Outdoor workers' vulnerability to global warming in Canada"
+      img: /images/OuranosProject.png
+      githublink: ""
+      featuredlink: ""
+      description: "In summer 2021, hundreds of people died due to excessive heat in Vancouver alone. With global warming, heat-related illnesses will increase which will have major social and economic consequences. Due to their intense and frequent exposure to heat, outdoor workers are especially at risk. In collaboration with Ouranos, Health Canada, and the National Institute of Public Health, we are working to quantify the consequences of climate change for the health of outdoor workers in Canada. I provided predictions on the evolution of heat-stress estimates in 2050 from climate models. Many tools I developped during this work were also added to the package ClimateTools.jl for Julia."
+  # PhD Research
+  disable_achievements: false
+  phd:
+    - title: Predicting trophic interactions to reduce the Eltonian Shortfall
+      description: Can we predict trophic interactions among all European tetrapods with a few interactions and widely available trait infomation?
+      img: /images/achiv.jpg
+    - title: Combining trophic interaction models and expert elicitation
+      description: How can we use expert knowledge to refine predictions of trophic interactions and get more realistic food webs?
+      img: /images/achiv.jpg
+    - title: Food web seasonality in Canada
+      description: Many animals escape the canadian winter by migrating or by stropping activity. How does it influence local food webs across Canada?
+      img: /images/achiv.jpg
+    - title: Cimate change and the Canadian food webs
+      description: Species are on the move, and food webs are being rewired. What does it mean for Canadian ecosystems?
+      img: /images/achiv.jpg
+
+  # Contact
+  disable_contact: false
+  contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+  email: "dominique.caron@mail.mcgill.ca"
+
+  # Footer
+  socialiconfooter: true
+  recentposts: true
+
+  # Blog
+  showdescription: false
+  tweet: true
