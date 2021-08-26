@@ -17,7 +17,7 @@
             </div>
             <ul class="py-2 ex-ol-ul">
               {{ range .featuredpoints }}
-              <li class="ex-ol-item">{{ .point }}</li>
+              <li class="ex-ol-item">{{ .point | markdownify }}</li>
               {{ end }}
             </ul>
           </li>
@@ -73,7 +73,7 @@
           </div>
           <ul class="py-2 ex">
             {{ range .featuredpoints }}
-            <li class="ex-item">{{ .point }}</li>
+            <li class="ex-item">{{ .point | markdownify }}</li>
             {{ end }}
           </ul>
         </div>
@@ -89,7 +89,7 @@
           </div>
           <ul class="py-2 ex">
             {{ range .featuredpoints }}
-            <li class="ex-item">{{ .point }}</li>
+            <li class="ex-item">{{ .point | markdownify }}</li>
             {{ end }}
           </ul>
         </div>
@@ -108,7 +108,7 @@
           </div>
           <ul class="py-2 ex">
             {{ range .featuredpoints }}
-            <li class="ex-item">{{ .point }}</li>
+            <li class="ex-item">{{ .point | markdownify }}</li>
             {{ end }}
           </ul>
         </div>
