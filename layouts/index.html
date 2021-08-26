@@ -87,11 +87,11 @@
     {{- partial "sections/v3/about.html" . -}}
     {{ end }}
 
-    {{ if .Site.Params.disable_experience }}
+    {{ if .Site.Params.disable_phd }}
     {{ else }}
-    {{- partial "sections/v3/experience.html" . -}}
+    {{- partial "sections/v3/phd.html" . -}}
     {{ end }}
-
+    
     {{ if .Site.Params.disable_education }}
     {{ else }}
     {{- partial "sections/v3/education.html" . -}}
@@ -102,9 +102,9 @@
     {{- partial "sections/v3/projects.html" . -}}
     {{ end }}
 
-    {{ if .Site.Params.disable_phd }}
+    {{ if .Site.Params.disable_experience }}
     {{ else }}
-    {{- partial "sections/v3/phd.html" . -}}
+    {{- partial "sections/v3/experience.html" . -}}
     {{ end }}
 
     {{ if .Site.Params.disable_contact }}

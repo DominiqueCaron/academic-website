@@ -45,34 +45,22 @@ params:
   descripe_l1_person: "I'm currently a PhD student in the [Quantitative Biodiversity Lab](https://qbiodiversity.org/) at McGill University. I make use of predictive models and readily available information to study food webs of terrestrial vertebrates in Canada and Europe. Prior to my PhD, I completed my MSc in Quantitative and Computational Biology at Université de Montréal where I had the chance to work with awesome people with various background and on a wide range of subject: ecological modelling, spatial ecology, statistical analyses, numerical simulations, ecological connectivity, eco-evolutionary dynamics, public health, and climate science."
   descripe_l2_person: "Interested in what I'm doing? Find more about my [research](#phd), some of the [other projects](#projects) I'm involved in, and my [publications](https://scholar.google.ca/citations?user=c1ee-V4AAAAJ&hl=fr&oi=ao), or consult my [CV](https://dominiquecaron.github.io/markdown-cv/)."
 
-  # Experience
-  disable_experience: false
-  experience:
-    - company: "Environment and Climate Change Canada"
-      id: "eccc-developer"
-      role: "Software developer"
-      startdate: Jan 2019
-      enddate: present
-      featuredpoints:
-        - point: Maintained and improved a decision-making software used during environmental emergencies.
-        - point: Developed other tools to help decision-making.
-    - company: "Éco-corridors Laurentiens"
-      id: "ecl-conservation"
-      role: "Conservation planning assistant"
-      startdate: Aug 2019
-      enddate: Dec 2019
-      featuredpoints:
-        - point: Performed ecological connectivity anayses and identified ecological corridors.
-        - point: Provided spatial prioritisation analyses for the Laurentides.
-    - company: "Ouranos"
-      id: "ouranos-intern"
-      role: "Research Assistant"
-      startdate: May 2018
-      enddate: Dec 2018
-      featuredpoints:
-        - point: Consequences of climate change on outdoor workers’ health in Canada.
-        - point: Developped [ClimateTools.jl](https://github.com/JuliaClimate/ClimateTools.jl) package.
-
+  # PhD Research
+  disable_achievements: false
+  phd:
+    - title: Predicting trophic interactions to reduce the Eltonian Shortfall
+      description: Can we predict trophic interactions among all European tetrapods with a few interactions and widely available trait infomation?
+      img: /images/achiv.jpg
+    - title: Combining trophic interaction models and expert elicitation
+      description: How can we use expert knowledge to refine predictions of trophic interactions and get more realistic food webs?
+      img: /images/achiv.jpg
+    - title: Food web seasonality in Canada
+      description: Many animals escape the canadian winter by migrating or by stropping activity. How does it influence local food webs across Canada?
+      img: /images/achiv.jpg
+    - title: Cimate change and the Canadian food webs
+      description: Species are on the move, and food webs are being rewired. What does it mean for Canadian ecosystems?
+      img: /images/achiv.jpg
+  
   # Education
   disable_education: false
   education:
@@ -115,21 +103,34 @@ params:
       githublink: ""
       featuredlink: ""
       description: "In summer 2021, hundreds of people died due to excessive heat in Vancouver alone. With global warming, heat-related illnesses will increase which will have major social and economic consequences. Due to their intense and frequent exposure to heat, outdoor workers are especially at risk. In collaboration with [Ouranos](https://www.ouranos.ca/en/), Health Canada, and the National Institute of Public Health, we are working to quantify the consequences of climate change for the health of outdoor workers in Canada. I provided predictions on the evolution of heat-stress estimates in 2050 from climate models. Many tools I developped during this work were also added to the package ClimateTools.jl for Julia."
-  # PhD Research
-  disable_achievements: false
-  phd:
-    - title: Predicting trophic interactions to reduce the Eltonian Shortfall
-      description: Can we predict trophic interactions among all European tetrapods with a few interactions and widely available trait infomation?
-      img: /images/achiv.jpg
-    - title: Combining trophic interaction models and expert elicitation
-      description: How can we use expert knowledge to refine predictions of trophic interactions and get more realistic food webs?
-      img: /images/achiv.jpg
-    - title: Food web seasonality in Canada
-      description: Many animals escape the canadian winter by migrating or by stropping activity. How does it influence local food webs across Canada?
-      img: /images/achiv.jpg
-    - title: Cimate change and the Canadian food webs
-      description: Species are on the move, and food webs are being rewired. What does it mean for Canadian ecosystems?
-      img: /images/achiv.jpg
+
+      # Experience
+  disable_experience: false
+  experience:
+    - company: "Environment and Climate Change Canada"
+      id: "eccc-developer"
+      role: "Software developer"
+      startdate: Jan 2019
+      enddate: present
+      featuredpoints:
+        - point: Maintained and improved a decision-making software used during environmental emergencies.
+        - point: Developed other tools to help decision-making.
+    - company: "Éco-corridors Laurentiens"
+      id: "ecl-conservation"
+      role: "Conservation planning assistant"
+      startdate: Aug 2019
+      enddate: Dec 2019
+      featuredpoints:
+        - point: Performed ecological connectivity anayses and identified ecological corridors.
+        - point: Provided spatial prioritisation analyses for the Laurentides.
+    - company: "Ouranos"
+      id: "ouranos-intern"
+      role: "Research Assistant"
+      startdate: May 2018
+      enddate: Dec 2018
+      featuredpoints:
+        - point: Consequences of climate change on outdoor workers’ health in Canada.
+        - point: Developped [ClimateTools.jl](https://github.com/JuliaClimate/ClimateTools.jl) package.
 
   # Contact
   disable_contact: false
@@ -138,7 +139,7 @@ params:
 
   # Footer
   socialiconfooter: true
-  recentposts: true
+  recentposts: false
 
   # Blog
   showdescription: false

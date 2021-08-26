@@ -18,11 +18,11 @@
         </li>
         {{ end }}
 
-        {{ if .Site.Params.disable_experience }}
+        {{ if .Site.Params.disable_phd }}
         {{ else }}
         <li class="nav-item navbar-text">
-          <a class="nav-link text-dark" href="{{ .Site.BaseURL | relURL }}#experience"
-            aria-label="experience">Experience</a>
+          <a class="nav-link text-dark" href="{{ .Site.BaseURL | relURL }}#phd"
+            aria-label="PhD">PhD</a>
         </li>
         {{ end }}
 
@@ -40,12 +40,12 @@
           <a class="nav-link text-dark" href="{{ .Site.BaseURL | relURL }}#projects" aria-label="projects">Projects</a>
         </li>
         {{ end }}
-
-        {{ if .Site.Params.disable_phd }}
+        
+        {{ if .Site.Params.disable_experience }}
         {{ else }}
         <li class="nav-item navbar-text">
-          <a class="nav-link text-dark" href="{{ .Site.BaseURL | relURL }}#phd"
-            aria-label="PhD Research">PhD Research</a>
+          <a class="nav-link text-dark" href="{{ .Site.BaseURL | relURL }}#experience"
+            aria-label="experience">Experience</a>
         </li>
         {{ end }}
 
@@ -61,6 +61,7 @@
           <a class="nav-link text-dark" href="{{.Url}}" aria-label="{{ .name }}">{{ .name }}</a>
         </li>
         {{ end }}
+        
         <li class="nav-item navbar-text">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1" autocomplete="on">
