@@ -50,16 +50,16 @@ params:
   phd:
     - title: Predicting trophic interactions to reduce the Eltonian Shortfall
       description: Can we predict trophic interactions among all European tetrapods with a few interactions and widely available trait infomation?
-      img: /images/achiv.jpg
+      img: images/Ch1.png
     - title: Combining trophic interaction models and expert elicitation
       description: How can we use expert knowledge to refine predictions of trophic interactions and get more realistic food webs?
-      img: /images/achiv.jpg
+      img: /images/Ch2.png
     - title: Food web seasonality in Canada
       description: Many animals escape the canadian winter by migrating or by stropping activity. How does it influence local food webs across Canada?
-      img: /images/achiv.jpg
+      img: /images/Ch3.png
     - title: Cimate change and the Canadian food webs
       description: Species are on the move, and food webs are being rewired. What does it mean for Canadian ecosystems?
-      img: /images/achiv.jpg
+      img: /images/Ch4.png
   
   # Education
   disable_education: false
